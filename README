@@ -1,0 +1,23 @@
+This is a sample program for our DGEMM implementation on a Cypress GPU.
+ALL.pdf explains how we implement four variants of DGEMM routines in IL.
+
+To build this program, you will need ATI Stream SDK and cblas.
+We have tested this program on Ubuntu 10.04.1 LTS (x86_64) with
+fglrx 8.77.5 (Aug 25 2010), and ATI Stream SDK 2.2 and gcc 4.4.3.
+The tested GPU boards are Radeon 4850, Radeon 5870 and Firestream 9350.
+
+We put test scripts under the "script" directory.
+"./script/test_NN.sh" tests "NN" kernel etc.
+
+This software is provided as is. See LICENSE.
+
+Reference to this work (as of October 11, 2010).
+
+@inproceedings{Nakasato_2010,
+   author = {{Nakasato}, N},
+    title = {{A Fast GEMM Implementation on a Cypress GPU}},
+  booktitle = {1st International Workshop on Performance Modeling, Benchmarking and Simulation of High Performance Computing Systems (PMBS 10)},
+     year = {2010},
+}
+
+Also see http://galaxy.u-aizu.ac.jp/trac/note/wiki/Fast_GEMM_implementation_On_Cypress
